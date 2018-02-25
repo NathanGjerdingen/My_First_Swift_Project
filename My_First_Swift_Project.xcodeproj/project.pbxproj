@@ -54,14 +54,22 @@
 		D8433E0A2042298D0036F7D3 /* My_First_Swift_Project */ = {
 			isa = PBXGroup;
 			children = (
-				D8433E0B2042298D0036F7D3 /* AppDelegate.swift */,
+				D8433E1D2042316A0036F7D3 /* Supporting Files */,
 				D8433E0D2042298D0036F7D3 /* ViewController.swift */,
 				D8433E0F2042298D0036F7D3 /* Main.storyboard */,
-				D8433E122042298D0036F7D3 /* Assets.xcassets */,
-				D8433E142042298D0036F7D3 /* LaunchScreen.storyboard */,
 				D8433E172042298D0036F7D3 /* Info.plist */,
 			);
 			path = My_First_Swift_Project;
+			sourceTree = "<group>";
+		};
+		D8433E1D2042316A0036F7D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D8433E0B2042298D0036F7D3 /* AppDelegate.swift */,
+				D8433E122042298D0036F7D3 /* Assets.xcassets */,
+				D8433E142042298D0036F7D3 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
