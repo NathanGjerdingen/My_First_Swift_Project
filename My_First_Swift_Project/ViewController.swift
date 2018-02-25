@@ -10,9 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    // Function for when button is touched...
+    var flipCount = 0 {
+        didSet {
+            flipCountLabel.text = "Flips: \(flipCount)"
+        }
+    }
+    
+    @IBOutlet weak var flipCountLabel: UILabel!
+    @IBOutlet var cardButton: [UIButton]!
+    var emojiChoises = ["🤯","😎","🤯","😎"]
+    
+    // Function for when 😎 button is touched...
     @IBAction func touchCard(_ sender: UIButton) {
-        flipCard(withEmoji: "😎", on: sender)
+        
+        flipCount += 1
+        
+        if let cardNumber = cardButton.index(of: sender) {
+            flipCard(withEmoji: emojiChoises[cardNumber], on: sender)
+        } else {
+            print("chosen card was not in cardButton.")
+        }
+        
     }
     
     // Function that flips a card...
