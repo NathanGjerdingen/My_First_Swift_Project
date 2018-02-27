@@ -9,6 +9,7 @@
 import UIKit
 
 //  Start at 47.55 on second lecture...
+//  Marbels is a total fag.
 
 class ViewController: UIViewController {
     
