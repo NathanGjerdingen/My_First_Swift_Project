@@ -9,7 +9,6 @@
 import UIKit
 
 //  Start at 47.55 on second lecture...
-//  Marbels is a total fag.
 
 class ViewController: UIViewController {
     
@@ -66,9 +65,7 @@ class ViewController: UIViewController {
     }
     
     func emoji(for card: Card) -> String {
-        
-        
-        
+        return ""
     }
 
 }
