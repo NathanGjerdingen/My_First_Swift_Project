@@ -27,7 +27,4 @@ struct Card {
         identifierFactory += 1
         return identifierFactory
     }
-    
-    
-    
 }
