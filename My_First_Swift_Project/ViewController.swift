@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         }
     }
     
-    var emojiChoises = ["🤯","😎","🤖","👾","👹"]
+    var emojiChoises = ["🤯","😎","🤖","👾","👹","☠️","💩","👽",]
     
     var emoji = [Int:String]()
     
@@ -68,7 +68,6 @@ class ViewController: UIViewController {
             let randomIndex = Int(arc4random_uniform(UInt32(emojiChoises.count)))
             emoji[card.identifier] = emojiChoises.remove(at: randomIndex)
         }
-        
         
         //
         //  Sytax below is equivilent to the following code...
