@@ -6,6 +6,14 @@
 //  Copyright © 2018 Nathan. All rights reserved.
 //
 
+
+
+
+// Currently at 56:50 of lecture 4
+
+
+
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -61,30 +69,35 @@ class ViewController: UIViewController {
         }
     }
     
-    private var emojiChoises = ["🤯","😎","🤖","👾","👹","☠️","💩","👽",]
+    //  private var emojiChoises = ["🤯","😎","🤖","👾","👹","☠️","💩","👽",]
+    private var emojiChoises = "🤯😎🤖👾👹☠️💩👽"
+
     
-    private var emoji = [Int:String]()
+    private var emoji = [Card:String]()
     
     private func emoji(for card: Card) -> String {
         
-        if emoji[card.identifier] == nil, emojiChoises.count > 0 {
-            emoji[card.identifier] = emojiChoises.remove(at: emojiChoises.count.arc4random)
+        //
+        // Implementation of string indexing in swift while using Swift collections...
+        //
+        
+        if emoji[card] == nil, emojiChoises.count > 0 {
+            let randomStringIndex = emojiChoises.index(emojiChoises.startIndex, offsetBy:  emojiChoises.count.arc4random)
+            emoji[card] = String(emojiChoises.remove(at: randomStringIndex))
         }
         
         //
         //  Sytax below is equivilent to the following code...
         //
-        //  if emoji[card.identifier] != nil {
-        //      return emoji[card.identifier]!
+        //  if emoji[card] != nil {
+        //      return emoji[card]!
         //  } else {
         //      return "?"
         //  }
         //
         
-        return emoji[card.identifier] ?? "?"
-        
+        return emoji[card] ?? "?"
     }
-
 }
 
 //
