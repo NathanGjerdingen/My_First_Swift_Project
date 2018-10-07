@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     //
     //  NOTE: Cannot have 'didSet'...
     //
+    //  This is a test to show Sang GitHub Desktop
+    //
     
     private lazy var game: Concentration = Concentration(numberOfPairsOfCards: numberOfPairsOfCards)
     
